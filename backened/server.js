@@ -11,12 +11,19 @@ const PORT = process.env.PORT || 5000;
 // Middleware
 app.use(express.json()); // Enable JSON parsing
 app.use(express.urlencoded({ extended: true })); // Parse JSON requests
-app.use(
-    cors({
-      origin: "https://67c45934b7f41f3f053ae733--startling-sprinkles-aaf5ed.netlify.app/", 
-      credentials: true,
-    })
-  ); // Enable CORS
+const cors = require("cors");
+
+const allowedOrigins = [
+  "https://startling-sprinkles-aaf5ed.netlify.app/", // ✅ Replace with your Netlify URL
+   // ✅ Allow local development
+];
+
+app.use(cors({
+  origin: allowedOrigins,
+  credentials: true, // ✅ Allow cookies & authentication headers
+  methods: "GET,POST,PUT,DELETE", // ✅ Allowed HTTP methods
+  allowedHeaders: "Content-Type,Authorization", // ✅ Allowed headers
+})); // Enable CORS
  // Use User Routes
 
 // MongoDB Connection
