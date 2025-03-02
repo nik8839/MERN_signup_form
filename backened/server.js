@@ -11,7 +11,6 @@ const PORT = process.env.PORT || 5000;
 // Middleware
 app.use(express.json()); // Enable JSON parsing
 app.use(express.urlencoded({ extended: true })); // Parse JSON requests
-const cors = require("cors");
 
 const allowedOrigins = [
   "https://startling-sprinkles-aaf5ed.netlify.app/", // ✅ Replace with your Netlify URL
