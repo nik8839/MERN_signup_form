@@ -30,7 +30,7 @@ Users can sign up by entering their **name, email, gender, and password**. The b
 ✅ **CORS enabled** for smooth frontend-backend communication  
 ✅ **Tailwind CSS** for a modern UI  
 ✅ **Environment variables support** (`.env`)  
-✅ **Deployed on Cyclic** (Free Hosting)  
+✅ **Deployed on netlify** (Free Hosting at )  https://67c45934b7f41f3f053ae733--startling-sprinkles-aaf5ed.netlify.app/
 
 ---
 
