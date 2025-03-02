@@ -34,9 +34,4 @@ Users can sign up by entering their **name, email, gender, and password**. The b
 
 ---
 
-## 🛠️ Installation & Setup  
 
-### 🔹 1. Clone the Repository  
-```bash
-git clone https://github.com/nik8839/MERN_signup_form.git
-cd MERN_signup_form
