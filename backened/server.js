@@ -11,7 +11,12 @@ const PORT = process.env.PORT || 5000;
 // Middleware
 app.use(express.json()); // Enable JSON parsing
 app.use(express.urlencoded({ extended: true })); // Parse JSON requests
-app.use(cors()); // Enable CORS
+app.use(
+    cors({
+      origin: "https://67c45934b7f41f3f053ae733--startling-sprinkles-aaf5ed.netlify.app/", 
+      credentials: true,
+    })
+  ); // Enable CORS
  // Use User Routes
 
 // MongoDB Connection
